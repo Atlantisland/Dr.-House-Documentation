@@ -108,7 +108,7 @@
     }
   ```
   
-  **2. Diagnoses**
+ **2. Diagnoses**
 -----------
   Diagnoses the patient, logs a message and returns it.
 
