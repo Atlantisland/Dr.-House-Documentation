@@ -106,5 +106,52 @@
     
     }
   ```
+    **2. Diagnoses**
+-----------
+  Diagnoses the patient, logs a message and returns it.
+
+* **URL**
+
+  /patients
+
+* **Method**
+
+  `POST`
+
+* **URL Params**
+
+  **Required**
+
+  None
+  
+* **Data Params**
+
+  `uuid=[string]`
+  
+  `name=[string]`
+  
+  `symptoms=[string]`
+ 
+  `diagnosis=[string]`
+ 
+* **Request**
+
+  ```javascript
+    { 
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa", 
+    "symptoms": "fatigue, appear pale"
+    }
+  ```
+* **Result**
+
+  ```javascript
+    {
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa",
+    "symptoms": "fatigue, appear pale",
+    "diagnosis": "anemia"
+    }
+  ```
   
 
