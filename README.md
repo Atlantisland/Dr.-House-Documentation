@@ -233,4 +233,140 @@
     
     }
   ```
+   Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
+  
+* **URL**
 
+  /treatments/{uuid}
+
+* **Method**
+
+  `GET`
+
+* **URL Params**
+
+  **Required**
+
+  `uuid=[string]`
+  
+* **Data Params**
+
+  None
+  
+* **Result**
+
+  ```javascript
+    {
+    
+    }
+  ```
+**4. Accountancy**
+-----------
+  Finds the Patient by uuid or saves a new one if it did not exist. Then generates an Invoice for that Patient, saves the Invoice, and returns the PatientDTO.
+
+* **URL**
+
+  /patients
+
+* **Method**
+
+  `POST`
+
+* **URL Params**
+
+  **Required**
+
+  None
+  
+* **Data Params**
+
+  `uuid=[string]`
+  
+  `name=[string]`
+  
+  `symptoms=[string]`
+ 
+  `diagnosis=[string]`
+  
+  `treatment=[string]`
+ 
+* **Request**
+
+  ```javascript
+    { 
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa", 
+    "symptoms": "fatigue, appear pale"
+    }
+  ```
+* **Result**
+
+  ```javascript
+    {
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa",
+    "symptoms": "fatigue, appear pale",
+    "diagnosis": "anemia",
+    "treatment": "spend one day in the hospital bed"
+    }
+  ```
+   Returns a list of all the Invoice entries that are saved in the database.
+  
+* **URL**
+
+  /invoices
+
+* **Method**
+
+  `GET`
+
+* **URL Params**
+
+  **Required**
+
+  None
+  
+* **Data Params**
+
+   `cost=[double]`
+  
+  `paid=[boolean]`
+  
+  `patient=[Patient]`
+  
+* **Result**
+
+  ```javascript
+    {
+    
+    }
+  ```
+   Marks the Invoice with the matching id as paid in the database.
+  
+* **URL**
+
+  /invoices/{id}/paid
+
+* **Method**
+
+  `PUT`
+
+* **URL Params**
+
+  **Required**
+
+  `id=[long]`
+  
+  `paid=[boolean]`
+  
+* **Data Params**
+
+  None
+  
+* **Result**
+
+  ```javascript
+    {
+    
+    }
+  ```
