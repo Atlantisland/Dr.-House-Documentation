@@ -1,5 +1,6 @@
 **Dr. House Hospital**
 =======
+
 * **Overview**
 -----------
   Dr. House hospital is a set of 4 web applications that communicate with each other in order to enable its management.
@@ -106,7 +107,8 @@
     
     }
   ```
-    **2. Diagnoses**
+  
+  **2. Diagnoses**
 -----------
   Diagnoses the patient, logs a message and returns it.
 
