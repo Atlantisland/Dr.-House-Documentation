@@ -1,7 +1,7 @@
-<h1>Dr. House Hospital</h1>
-
-<h2>Overview</h2>
-
+**Dr. House Hospital**
+=======
+**Overview**
+-----------
 <p>Dr. House hospital is a set of web applications that communicate with each other in order to enable its management.</p>
 
 <p>Web applications:</p>
@@ -28,5 +28,9 @@
 </ul>
 
 <code>POST</code>
+
+<ul>
+<li>URL Params</li>
+</ul>
 
 
