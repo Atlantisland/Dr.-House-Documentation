@@ -2,9 +2,7 @@
 =======
 **Overview**
 -----------
-<p>Dr. House hospital is a set of web applications that communicate with each other in order to enable its management.</p>
-
-<p>Web applications:</p>
+Dr. House hospital is a set of 4 web applications that communicate with each other in order to enable its management.
 
 <ol>
 <li>Admission: the patient receives a unique identifier and goes to the Diagnoses. Only a REST client with the right credentials can access to use it.</li>
