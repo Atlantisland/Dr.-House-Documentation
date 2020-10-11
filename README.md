@@ -23,4 +23,18 @@
 
 * **URL Params**
 
+  **Required**
+
+  None
+  
+* **Data Params**
+
+  `uuid=[string]`
+  `name=[string]`
+  `symptoms=[string]`
+  
+* **Response**
+
+  `{"uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69", "name": "Lisa", "symptoms": "headache"}`
+  
 
