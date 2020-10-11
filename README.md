@@ -19,7 +19,7 @@
 
 * **Method**
 
-  'POST'
+  `POST`
 
 * **URL Params**
 
