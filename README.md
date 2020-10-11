@@ -41,7 +41,7 @@
   ```javascript
     { 
     "name": "Lisa", 
-    "symptoms": "headache"
+    "symptoms": "fatigue, appear pale"
     }
   ```
 * **Result**
@@ -50,7 +50,7 @@
     {
     "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69", 
     "name": "Lisa", 
-    "symptoms": "headache"
+    "symptoms": "fatigue, appear pale"
     }
   ```
   Returns all the registered patients.
