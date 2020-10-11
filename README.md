@@ -79,7 +79,7 @@
     "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
     }
   ```
-  Returns the patient with the specific name if the patient was admitted, otherwise returns null.
+  Returns the patient with the specific name if the patient had been admitted, otherwise returns null.
   
 * **URL**
 
