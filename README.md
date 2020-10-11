@@ -155,5 +155,82 @@
     "diagnosis": "anemia"
     }
   ```
+    
+ **3. Treatments**
+-----------
+  Provides a Treatment for the Patient, saves it in the database, and returns it.
+
+* **URL**
+
+  /patients
+
+* **Method**
+
+  `POST`
+
+* **URL Params**
+
+  **Required**
+
+  None
   
+* **Data Params**
+
+  `uuid=[string]`
+  
+  `name=[string]`
+  
+  `symptoms=[string]`
+ 
+  `diagnosis=[string]`
+  
+  `treatment=[string]`
+ 
+* **Request**
+
+  ```javascript
+    { 
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa", 
+    "symptoms": "fatigue, appear pale"
+    }
+  ```
+* **Result**
+
+  ```javascript
+    {
+    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+    "name": "Lisa",
+    "symptoms": "fatigue, appear pale",
+    "diagnosis": "anemia",
+    "treatment": "spend one day in the hospital bed"
+    }
+  ```
+   Returns a list of all the Treatment entries that are saved in the database.
+  
+* **URL**
+
+  /treatments
+
+* **Method**
+
+  `GET`
+
+* **URL Params**
+
+  **Required**
+
+  None
+  
+* **Data Params**
+
+  None
+  
+* **Result**
+
+  ```javascript
+    {
+    
+    }
+  ```
 
