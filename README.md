@@ -9,7 +9,7 @@
   3. Treatments: the patient receives the respective treatment that is saved in the database and goes to the Accountancy.
   4. Accountancy: the patient receives the respective invoice that is saved in the database. Only accountant with the right credentials can access to see the   invoices and mark them as paid.
 
-* **Admission**
+**1. Admission**
 -----------
   Registers the patient with name and symptoms, provides a UUID and returns it.
 
