@@ -30,7 +30,9 @@
 * **Data Params**
 
   `uuid=[string]`
+  
   `name=[string]`
+  
   `symptoms=[string]`
   
 * **Response**
