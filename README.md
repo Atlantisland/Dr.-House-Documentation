@@ -96,7 +96,7 @@
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{error : "You are unauthorized to make this request."}`
   
-  Returns the patient with the specific name if the patient had been admitted, otherwise returns null.
+ Returns the patient with the specific name if the patient had been admitted, otherwise returns null.
   
 * **URL**
 
@@ -131,7 +131,7 @@
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{error : "User doesn't exist"}`
+    **Content:** `{error : "Patient doesn't exist"}`
     
  OR
 
