@@ -152,7 +152,7 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-* **Result**
+* **Response**
 
   ```javascript
     {
@@ -202,7 +202,7 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-* **Result**
+* **Response**
 
   ```javascript
     {
