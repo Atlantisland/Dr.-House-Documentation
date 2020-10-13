@@ -47,7 +47,6 @@
 * **Success Response**
 
   * **Code:** 200 <br />
-  
     **Content:** 
     
     ```javascript
@@ -60,9 +59,13 @@
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED <br />
-  
-    **Content:** `{error : "You are unauthorized to make this request."}`
- 
+    **Content:** 
+    
+    ```javascript
+    {
+    error : "You are unauthorized to make this request."
+    }
+ ```
  Returns all the registered patients.
   
 * **URL**
