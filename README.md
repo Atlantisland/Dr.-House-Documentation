@@ -236,7 +236,7 @@
     "treatment": "spend one day in the hospital bed"
     }
   ```
-  Returns a list of all the Treatment entries that are saved in the database.
+ Returns a list of all the Treatment entries that are saved in the database.
   
 * **URL**
 
@@ -270,7 +270,7 @@
     }
   ```
   
-  Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
+ Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
   
 * **URL**
 
@@ -305,7 +305,7 @@
   ```
 **4. Accountancy**
 -----------
-  Finds the Patient by uuid or saves a new one if it did not exist. Then generates an Invoice for that Patient, saves the Invoice, and returns the PatientDTO.
+Finds the Patient by uuid or saves a new one if it did not exist. Then generates an Invoice for that Patient, saves the Invoice, and returns the Patient.
 
 * **URL**
 
@@ -353,7 +353,7 @@
     "treatment": "spend one day in the hospital bed"
     }
   ```
-   Returns a list of all the Invoice entries that are saved in the database.
+Returns a list of all the Invoice entries that are saved in the database.
   
 * **URL**
 
@@ -381,10 +381,20 @@
 
   ```javascript
     {
-    
+      [{
+       "cost" : 40.0,
+       "paid" : true,
+       "patients" : [{
+                      "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+                      "name": "Lisa",
+                      "symptoms": "fatigue, appear pale",
+                      "diagnosis": "anemia",
+                      "treatment": "spend one day in the hospital bed"
+                     }]
+     }]
     }
   ```
-   Marks the Invoice with the matching id as paid in the database.
+Marks the Invoice with the matching id as paid in the database.
   
 * **URL**
 
