@@ -102,7 +102,7 @@
   
 * **Success Response**
 
-* **Code:** 200 <br />
+  * **Code:** 200 <br />
     **Content:** `{"uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69","name": "Lisa"}`
     
 * **Error Response:**
@@ -113,7 +113,7 @@
   OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`    
+    **Content:** `{ error : "You are unauthorized to make this request." }`   
   
  **2. Diagnoses**
 -----------
