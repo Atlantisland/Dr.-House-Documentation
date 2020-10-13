@@ -57,18 +57,12 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-  
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED <br />
   
-    **Content:** 
-    
-    ```javascript
-    {
-   error : "You are unauthorized to make this request."
-    }
-  ````
+    **Content:** `{error : "You are unauthorized to make this request."}`
+ 
   Returns all the registered patients.
   
 * **URL**
