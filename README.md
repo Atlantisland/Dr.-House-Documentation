@@ -236,7 +236,7 @@
     "treatment": "spend one day in the hospital bed"
     }
   ```
-   Returns a list of all the Treatment entries that are saved in the database.
+  Returns a list of all the Treatment entries that are saved in the database.
   
 * **URL**
 
@@ -270,7 +270,7 @@
     }
   ```
   
- Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
+  Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
   
 * **URL**
 
