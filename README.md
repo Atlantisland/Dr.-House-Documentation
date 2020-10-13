@@ -59,13 +59,8 @@
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** 
-    
-    ```javascript
-    {
-    error : "You are unauthorized to make this request."
-    }
- ```
+    **Content:** `{error : "You are unauthorized to make this request."}`
+
  Returns all the registered patients.
   
 * **URL**
@@ -93,6 +88,7 @@
     "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
     }
   ```
+  
   Returns the patient with the specific name if the patient had been admitted, otherwise returns null.
   
 * **URL**
