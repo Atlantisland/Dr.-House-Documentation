@@ -260,17 +260,17 @@
 
   ```javascript
     {
-     "treatment" : [{
-               "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
-               "name" : "Lisa",
-               "symptoms" : "fatigue, appear pale",
-               "diagnosis" : "anemia",
-               "treatment" : "spend one day in the hospital bed"
+     [{
+       "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+       "name" : "Lisa",
+       "symptoms" : "fatigue, appear pale",
+       "diagnosis" : "anemia",
+       "treatment" : "spend one day in the hospital bed"
       }]
     }
   ```
   
-   Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
+ Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
   
 * **URL**
 
@@ -294,13 +294,13 @@
 
    ```javascript
     {
-     "treatment" : [{
-               "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
-               "name" : "Lisa",
-               "symptoms" : "fatigue, appear pale",
-               "diagnosis" : "anemia",
-               "treatment" : "spend one day in the hospital bed"
-      }]
+     [{
+       "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+       "name" : "Lisa",
+       "symptoms" : "fatigue, appear pale",
+       "diagnosis" : "anemia",
+       "treatment" : "spend one day in the hospital bed"
+     }]
     }
   ```
 **4. Accountancy**
