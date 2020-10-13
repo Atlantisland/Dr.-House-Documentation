@@ -61,7 +61,7 @@
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{error : "You are unauthorized to make this request."}`
 
-  Returns all the registered patients.
+ Returns all the registered patients.
   
 * **URL**
 
