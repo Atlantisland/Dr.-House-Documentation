@@ -305,7 +305,7 @@
   ```
 **4. Accountancy**
 -----------
-Finds the Patient by uuid or saves a new one if it did not exist. Then generates an Invoice for that Patient, saves the Invoice, and returns the Patient.
+Finds the Patient by uuid or saves a new one if it did not exist. 
 
 * **URL**
 
@@ -377,23 +377,34 @@ Returns a list of all the Invoice entries that are saved in the database.
   
   `patient=[Patient]`
   
-* **Response**
+* **Success Response**
 
-  ```javascript
-    {
-      [{
-       "cost" : 40.0,
-       "paid" : true,
-       "patients" : [{
-                      "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
-                      "name": "Lisa",
-                      "symptoms": "fatigue, appear pale",
-                      "diagnosis": "anemia",
-                      "treatment": "spend one day in the hospital bed"
-                     }]
-     }]
-    }
-  ```
+  * **Code:** 200 <br />
+  
+    **Content:**
+  
+    ```javascript
+       {
+        [{
+          "cost" : 40.0,
+          "paid" : false,
+          "patients" : [{
+                         "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+                         "name": "Lisa",
+                         "symptoms": "fatigue, appear pale",
+                         "diagnosis": "anemia",
+                         "treatment": "spend one day in the hospital bed"
+                        ]
+        }]
+       }
+    ```
+    
+* **Error Response**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+  
+    **Content:** `{error : "You are unauthorized to make this request."}
+   
 Marks the Invoice with the matching id as paid in the database.
   
 * **URL**
@@ -416,10 +427,30 @@ Marks the Invoice with the matching id as paid in the database.
 
   None
   
-* **Response**
+* **Success Response**
 
-  ```javascript
-    {
+  * **Code:** 200 <br />
+  
+    **Content:**
+  
+    ```javascript
+       {
+        [{
+          "cost" : 40.0,
+          "paid" : true,
+          "patients" : [{
+                         "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+                         "name": "Lisa",
+                         "symptoms": "fatigue, appear pale",
+                         "diagnosis": "anemia",
+                         "treatment": "spend one day in the hospital bed"
+                        ]
+        }]
+       }
+    ```
     
-    }
-  ```
+* **Error Response**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+  
+    **Content:** `{error : "You are unauthorized to make this request."}
