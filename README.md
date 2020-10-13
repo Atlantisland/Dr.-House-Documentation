@@ -380,7 +380,6 @@ Returns a list of all the Invoice entries that are saved in the database.
 * **Success Response**
 
   * **Code:** 200 <br />
-  
     **Content:**
   
     ```javascript
@@ -402,7 +401,6 @@ Returns a list of all the Invoice entries that are saved in the database.
 * **Error Response**
 
   * **Code:** 401 UNAUTHORIZED <br />
-  
     **Content:** `{error : "You are unauthorized to make this request."}`
    
 Marks the Invoice with the matching id as paid in the database.
@@ -430,7 +428,6 @@ Marks the Invoice with the matching id as paid in the database.
 * **Success Response**
 
   * **Code:** 200 <br />
-  
     **Content:**
   
     ```javascript
@@ -452,5 +449,4 @@ Marks the Invoice with the matching id as paid in the database.
 * **Error Response**
 
   * **Code:** 401 UNAUTHORIZED <br />
-  
     **Content:** `{error : "You are unauthorized to make this request."}`
