@@ -61,7 +61,7 @@
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{error : "You are unauthorized to make this request."}`
 
- Returns all the registered patients.
+  Returns all the registered patients.
   
 * **URL**
 
@@ -131,23 +131,12 @@
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** 
+    **Content:** `{error : "User doesn't exist"}`
     
-    ```javascript
-       {
-       error : "User doesn't exist"
-       }
-    ```
  OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** 
-    
-     ```javascript
-        {
-        error : "You are unauthorized to make this request.
-        }
-     ```   
+    **Content:** `{error : "You are unauthorized to make this request."}`
   
 **2. Diagnoses**
 -----------
