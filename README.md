@@ -81,13 +81,20 @@
 
   None
   
-* **Response**
+* **Success Response**
 
-  ```javascript
+  * **Code:** 200 <br />
+    **Content:** 
+    
+    ```javascript
     {
-    "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
+   "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
     }
   ```
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+    **Content:** `{error : "You are unauthorized to make this request."}`
   
   Returns the patient with the specific name if the patient had been admitted, otherwise returns null.
   
@@ -112,19 +119,37 @@
 * **Success Response**
 
   * **Code:** 200 <br />
-    **Content:** `{"uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69","name": "Lisa"}`
+    **Content:** 
+    
+     ```javascript
+    {
+     "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+     "name": "Lisa"
+    }
+  ``` 
     
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
-
-  OR
+    **Content:** 
+    
+    ```javascript
+    {
+    error : "User doesn't exist"
+    }
+  ```
+ OR
 
   * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`   
+    **Content:** 
+    
+     ```javascript
+    {
+    error : "You are unauthorized to make this request.
+    }
+  ```   
   
- **2. Diagnoses**
+**2. Diagnoses**
 -----------
   Diagnoses the patient, logs a message and returns it.
 
