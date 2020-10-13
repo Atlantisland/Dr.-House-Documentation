@@ -371,7 +371,7 @@ Returns a list of all the Invoice entries that are saved in the database.
   
 * **Data Params**
 
-   `cost=[double]`
+  `cost=[double]`
   
   `paid=[boolean]`
   
@@ -403,7 +403,7 @@ Returns a list of all the Invoice entries that are saved in the database.
 
   * **Code:** 401 UNAUTHORIZED <br />
   
-    **Content:** `{error : "You are unauthorized to make this request."}
+    **Content:** `{error : "You are unauthorized to make this request."}`
    
 Marks the Invoice with the matching id as paid in the database.
   
@@ -453,4 +453,4 @@ Marks the Invoice with the matching id as paid in the database.
 
   * **Code:** 401 UNAUTHORIZED <br />
   
-    **Content:** `{error : "You are unauthorized to make this request."}
+    **Content:** `{error : "You are unauthorized to make this request."}`
