@@ -44,7 +44,7 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-  * **Success Response**
+* **Success Response**
 
   * **Code:** 200 <br />
   
@@ -63,7 +63,7 @@
   
     **Content:** `{error : "You are unauthorized to make this request."}`
  
-  Returns all the registered patients.
+ Returns all the registered patients.
   
 * **URL**
 
