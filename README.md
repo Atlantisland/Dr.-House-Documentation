@@ -50,12 +50,12 @@
     **Content:** 
     
     ```javascript
-    {
-    "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69", 
-    "name": "Lisa", 
-    "symptoms": "fatigue, appear pale"
-    }
-  ```
+       {
+        "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69", 
+        "name": "Lisa", 
+        "symptoms": "fatigue, appear pale"
+       }
+    ```
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED <br />
@@ -87,10 +87,10 @@
     **Content:** 
     
     ```javascript
-    {
-    "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
-    }
-  ```
+       {
+       "Lisa": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69"
+       }
+    ```
 * **Error Response:**
 
   * **Code:** 401 UNAUTHORIZED <br />
@@ -122,11 +122,11 @@
     **Content:** 
     
      ```javascript
-    {
-     "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
-     "name": "Lisa"
-    }
-  ``` 
+        {
+        "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+        "name": "Lisa"
+        }
+     ``` 
     
 * **Error Response:**
 
@@ -134,20 +134,20 @@
     **Content:** 
     
     ```javascript
-    {
-    error : "User doesn't exist"
-    }
-  ```
+       {
+       error : "User doesn't exist"
+       }
+    ```
  OR
 
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** 
     
      ```javascript
-    {
-    error : "You are unauthorized to make this request.
-    }
-  ```   
+        {
+        error : "You are unauthorized to make this request.
+        }
+     ```   
   
 **2. Diagnoses**
 -----------
