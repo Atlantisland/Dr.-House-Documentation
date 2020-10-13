@@ -131,7 +131,7 @@
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `{error : "Patient doesn't exist"}`
+    **Content:** `{error : "Patient does not exist"}`
     
   OR
 
@@ -256,13 +256,20 @@
 
   None
   
-* **Result**
+* **Response**
 
   ```javascript
     {
-    
+     "treatment" : [{
+               "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+               "name" : "Lisa",
+               "symptoms" : "fatigue, appear pale",
+               "diagnosis" : "anemia",
+               "treatment" : "spend one day in the hospital bed"
+      }]
     }
   ```
+  
    Returns a list of all the Treatment entries with the matching uuid that are saved in the database.
   
 * **URL**
@@ -283,11 +290,17 @@
 
   None
   
-* **Result**
+* **Response**
 
-  ```javascript
+   ```javascript
     {
-    
+     "treatment" : [{
+               "uuid" : "3bc716e1-9c68-4c42-bc89-62b4e9c67f69",
+               "name" : "Lisa",
+               "symptoms" : "fatigue, appear pale",
+               "diagnosis" : "anemia",
+               "treatment" : "spend one day in the hospital bed"
+      }]
     }
   ```
 **4. Accountancy**
@@ -329,7 +342,7 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-* **Result**
+* **Response**
 
   ```javascript
     {
@@ -364,7 +377,7 @@
   
   `patient=[Patient]`
   
-* **Result**
+* **Response**
 
   ```javascript
     {
@@ -393,7 +406,7 @@
 
   None
   
-* **Result**
+* **Response**
 
   ```javascript
     {
