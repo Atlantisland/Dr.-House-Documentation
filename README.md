@@ -394,7 +394,7 @@ Returns a list of all the Invoice entries that are saved in the database.
                          "symptoms": "fatigue, appear pale",
                          "diagnosis": "anemia",
                          "treatment": "spend one day in the hospital bed"
-                        ]
+                       }]
         }]
        }
     ```
@@ -444,7 +444,7 @@ Marks the Invoice with the matching id as paid in the database.
                          "symptoms": "fatigue, appear pale",
                          "diagnosis": "anemia",
                          "treatment": "spend one day in the hospital bed"
-                        ]
+                       }]
         }]
        }
     ```
