@@ -44,15 +44,31 @@
     "symptoms": "fatigue, appear pale"
     }
   ```
-* **Response**
+  * **Success Response**
 
-  ```javascript
+  * **Code:** 200 <br />
+  
+    **Content:** 
+    
+    ```javascript
     {
     "uuid": "3bc716e1-9c68-4c42-bc89-62b4e9c67f69", 
     "name": "Lisa", 
     "symptoms": "fatigue, appear pale"
     }
   ```
+  
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED <br />
+  
+    **Content:** 
+    
+    ```javascript
+    {
+   error : "You are unauthorized to make this request."
+    }
+  ````
   Returns all the registered patients.
   
 * **URL**
